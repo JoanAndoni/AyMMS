@@ -1,0 +1,77 @@
+@startuml
+    Class Artwork<<Template>>{
+        string name
+        float price
+        string artist
+        int year
+
+        Artwork(Master_Artwork);
+        Artwork(Repre_Artwork);
+        Artwork(Other_Artwork);
+    }
+
+    Class Master_Artwork{
+        string name
+        float price
+        string artist
+        int year
+
+        Master_Artwork();
+    }
+
+    Class Repre_Artwork{
+        string name
+        float price
+        string artist
+        int year
+
+        Repre_Artwork();
+    }
+
+        Class Other_Artwork{
+        string name
+        float price
+        string artist
+        int year
+
+        Other_Artwork();
+    }
+
+    Class Searching{
+        Artwork to_Check
+
+        Searching(Artwork);
+        Artwork compare(to_Check);
+    }
+
+    Class Inventory{
+        Array Artwork[];
+
+        void create();
+        void delete();
+    }
+
+    Class Purchase{
+        Artwork nuevo
+        nuevo.price = nuevo.price * 1.082
+    }
+
+    Class Sell{
+        Artwork to_sell
+        String vendedor
+        float price 
+    }
+
+    Class Client{
+        string Name
+    }
+
+    Master_Artwork-->Artwork
+    Repre_Artwork-->Artwork
+    Other_Artwork-->Artwork
+    Purchase -- Inventory : use
+    Searching -- Artwork
+    Inventory *-- Searching 
+    Inventory -- Sell : use >
+    Sell -- Client : use >
+@enduml

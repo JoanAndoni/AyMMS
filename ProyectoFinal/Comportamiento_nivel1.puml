@@ -1,0 +1,5 @@
+@startuml
+    Administrador_residencias --> (Comportamiento de alumnos)
+    (Comportamiento de alumnos) ..> (A/B/C de indisciplinas) : <<include>>
+    (Comportamiento de alumnos) ..> (A/B/C de historial academico) : <<include>>
+@enduml

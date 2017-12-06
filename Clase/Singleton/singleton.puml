@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+@startUML
+    Class Singleton<<Static>>{
+        # static singleton* instance;
+        - Singleton() = default;
+        + static singleton* getInstance()
+        + void operacion()
+    }
+
+    Singleton *--> Singleton
+=======
+=======
+>>>>>>> dc71be081124da78cefa269cb09ab8f2c52e68ac
+@startUML
+    Class Singleton<<Static>>{
+        # static singleton* instance;
+        - Singleton() = default;
+        + static singleton* getInstance()
+        + void operacion()
+    }
+
+    Singleton *--> Singleton
+<<<<<<< HEAD
+>>>>>>> Subir todo despues de borrarlo
+=======
+>>>>>>> dc71be081124da78cefa269cb09ab8f2c52e68ac
+@endUML

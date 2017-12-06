@@ -1,0 +1,158 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+@startUML
+
+class Shop{
+    +string name
+	+Shop(string nombre) 
+    +name(nombre)
+	
+}
+
+class Create <Template <class Base , class SubClase>>{
+    +Base* create(string n, string m)
+}
+
+class Computers{
+	+string nombre;
+	+string marca;
+	+int serie;
+	+int GB_Ram;
+	+int memory;
+	+Shop* shop;
+	+virtual Computers* create(string n, string m);
+
+    +Computers() = default;
+	+Computers(string nombre)
+
+	+void assembly()
+	+void Install_Config_Software()
+	+void Packing()
+	+void especification()
+}
+
+class Desktop <Create<Computers, Desktop>>{ 
+	Desktop(string n, string m)
+	Desktop(const Desktop& d)
+}
+
+class Laptop <Create<Computers, Laptop>>{ 
+	Laptop(string n, string m)
+	Laptop(const Laptop& d)
+}
+
+class NoteBook <Create<Computers, NoteBook>>{ 
+	NoteBook(string n, string m)
+	NoteBook(const NoteBook& d)
+}
+
+class Tablet <Create<Computers, Tablet>>{ 
+	Tablet(string n, string m)
+	Tablet(const Tablet& d)
+}
+
+class ServerRack <Create<Computers, ServerRack>>{ 
+	ServerRack(string n, string m)
+	ServerRack(const ServerRack& d)
+}
+
+class ServerTower <Create<Computers, ServerTower>>{ 
+	ServerTower(string n, string m)
+	ServerTower(const ServerTower& d)
+}
+
+
+Create --|> Computers
+
+Create --|> Desktop
+Create --|> Laptop
+Create --|> NoteBook
+Create --|> Tablet
+Create --|> ServerRack 
+Create --|> ServerTower
+
+Shop --* Computers
+
+
+=======
+=======
+>>>>>>> dc71be081124da78cefa269cb09ab8f2c52e68ac
+@startUML
+
+class Shop{
+    +string name
+	+Shop(string nombre) 
+    +name(nombre)
+	
+}
+
+class Create <Template <class Base , class SubClase>>{
+    +Base* create(string n, string m)
+}
+
+class Computers{
+	+string nombre;
+	+string marca;
+	+int serie;
+	+int GB_Ram;
+	+int memory;
+	+Shop* shop;
+	+virtual Computers* create(string n, string m);
+
+    +Computers() = default;
+	+Computers(string nombre)
+
+	+void assembly()
+	+void Install_Config_Software()
+	+void Packing()
+	+void especification()
+}
+
+class Desktop <Create<Computers, Desktop>>{ 
+	Desktop(string n, string m)
+	Desktop(const Desktop& d)
+}
+
+class Laptop <Create<Computers, Laptop>>{ 
+	Laptop(string n, string m)
+	Laptop(const Laptop& d)
+}
+
+class NoteBook <Create<Computers, NoteBook>>{ 
+	NoteBook(string n, string m)
+	NoteBook(const NoteBook& d)
+}
+
+class Tablet <Create<Computers, Tablet>>{ 
+	Tablet(string n, string m)
+	Tablet(const Tablet& d)
+}
+
+class ServerRack <Create<Computers, ServerRack>>{ 
+	ServerRack(string n, string m)
+	ServerRack(const ServerRack& d)
+}
+
+class ServerTower <Create<Computers, ServerTower>>{ 
+	ServerTower(string n, string m)
+	ServerTower(const ServerTower& d)
+}
+
+
+Create --|> Computers
+
+Create --|> Desktop
+Create --|> Laptop
+Create --|> NoteBook
+Create --|> Tablet
+Create --|> ServerRack 
+Create --|> ServerTower
+
+Shop --* Computers
+
+
+<<<<<<< HEAD
+>>>>>>> Subir todo despues de borrarlo
+=======
+>>>>>>> dc71be081124da78cefa269cb09ab8f2c52e68ac
+@endUML

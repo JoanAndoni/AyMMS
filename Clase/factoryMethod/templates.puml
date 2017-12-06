@@ -1,0 +1,50 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+@startUML
+Class factory<<template>>{
+    +template<class Prod>
+    +Prod* factoryMethod()
+}
+
+Class ProductA{
+    + operation()
+}
+
+Class ProductB {
+    + operation()
+}
+
+factory --> ProductA : Returns
+ProductA ..|> factory : implemets 
+factory --> ProductB : Returns
+ProductB ..|> factory : implements
+
+
+=======
+=======
+>>>>>>> dc71be081124da78cefa269cb09ab8f2c52e68ac
+@startUML
+Class factory<<template>>{
+    +template<class Prod>
+    +Prod* factoryMethod()
+}
+
+Class ProductA{
+    + operation()
+}
+
+Class ProductB {
+    + operation()
+}
+
+factory --> ProductA : Returns
+ProductA ..|> factory : implemets 
+factory --> ProductB : Returns
+ProductB ..|> factory : implements
+
+
+<<<<<<< HEAD
+>>>>>>> Subir todo despues de borrarlo
+=======
+>>>>>>> dc71be081124da78cefa269cb09ab8f2c52e68ac
+@endUML

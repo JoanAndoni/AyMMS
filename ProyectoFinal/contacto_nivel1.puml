@@ -1,0 +1,4 @@
+@startuml
+    Administrador_residencias --> (Contacto)
+    (Contacto) ..> (Enviar correo predefinido) : <<include>>
+@enduml

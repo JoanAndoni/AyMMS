@@ -1,0 +1,13 @@
+@startuml
+    :Osbert: as Seller
+    :Clients: as Client
+
+    (Purchase Art piece) as (buy)
+    (Sell Art piece) as (sell)
+    (Create reports) as (report)
+
+    Seller -> (buy)
+    Seller -> (sell)
+    Seller -> (report)
+    Client -> (sell)
+@enduml

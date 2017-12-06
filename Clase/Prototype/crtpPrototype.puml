@@ -1,0 +1,53 @@
+@startUML
+
+class Mundo{
+    +string name
+	+Mundo(string nombre) 
+    +name(nombre)
+	
+}
+
+class Tclone <<Template <class SubClase>>>{
+    +Personaje* clone()
+}
+
+class Personaje{
+	+string nombre
+	+int telefono
+	+string correo
+	+Mundo* mundo
+    +Personaje() = default
+    +Personaje(string nombre) : nombre(nombre){}
+    +virtual Personaje* clone() = 0
+}
+
+class Princesa <<public Personaje>>{ 
+	+Princesa(string n) : Personaje(n){}
+	+Princesa(const Princesa& p)
+    +void grita()
+    +Personaje* clone()
+
+}
+
+class Villano <<public Personaje>>{
+	+Villano(string n) : Personaje(n){}
+    +void secuestra()
+	+Villano(const Villano& v)
+    +Personaje* clone()
+}
+
+class Heroe <<public Personaje>>{ 
+	+Heroe(string n) : Personaje(n){}
+    +void salvar()
+	+Heroe(const Heroe& h)
+    +Personaje* clone()
+}
+
+Tclone <|-- Princesa
+Tclone <|-- Villano
+Tclone <|-- Heroe
+Tclone --|> Personaje
+Mundo --* Personaje
+
+
+@endUML

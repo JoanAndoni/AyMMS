@@ -1,0 +1,20 @@
+@startUML
+class Product{
+    +void operation1()
+    +void operation2()
+}
+
+class Creator{
+    * virtual Product* createProduct(int type)
+    + Product* factoryMethod(int type)
+}
+
+class CreatorA {
+    + Product* createProduct(int type)
+}
+
+CreatorA ..|> Creator : implements
+Creator --> CreatorA
+Product <-- CreatorA
+
+@endUML

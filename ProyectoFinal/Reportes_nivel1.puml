@@ -1,0 +1,7 @@
+@startuml
+    Administrador_residencias --> (Administracion de reportes)
+    (Administracion de reportes) ..> (Consulta de perfil psicológico) : <<include>>
+    (Administracion de reportes) ..> (Consulta de historial médico) : <<include>>
+    (Administracion de reportes) ..> (Consulta de indisciplinas) : <<include>>
+    (Administracion de reportes) ..> (Consulta de seguimiento academico) : <<include>>
+@enduml
